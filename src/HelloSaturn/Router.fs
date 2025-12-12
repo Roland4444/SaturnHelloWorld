@@ -15,6 +15,9 @@ let defaultView = router {
     get "/test" (text "hello wolrd from /test")
     get "/index.html" (redirectTo false "/")
     get "/default.html" (redirectTo false "/")
+
+    get "/ru" (htmlFile "static/survey.html")
+    get "farsi" (htmlFile "static/survey-farsi.html")
 }
 
 let browserRouter = router {
